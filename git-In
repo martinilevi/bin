@@ -1,5 +1,4 @@
 #!/bin/sh
-echo git-out-all
 set -e
 
 #trigger error early if not in a repo
