@@ -1,0 +1,25 @@
+#!/bin/sh
+echo git-out
+set -e
+
+#trigger error early if not in a repo
+git remote >/dev/null
+
+#save repo name
+REMOTE=`git remote | head -1`
+
+#pull last remotes
+git fetch $REMOTE
+
+#name guessing
+BRANCH_NAME=`git branch | grep "*" | awk '{print $2}'`
+
+#go for command
+OUT=`git log $REMOTE/$BRANCH_NAME..$BRANCH_NAME`
+
+#do output only if differences
+if [ ${#OUT} != 0 ];
+then
+	echo Assuming local branch "$BRANCH_NAME" and remote "$REMOTE/$BRANCH_NAME"
+	git log $REMOTE/$BRANCH_NAME..$BRANCH_NAME
+fi
