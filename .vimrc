@@ -17,3 +17,4 @@ syntax on
 set tags+=/usr/include/tags
 set tags+=/home/martin/devel/cdn-awa
 set nu
+set nocompatible
