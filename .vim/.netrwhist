@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/martin/devel/cdnawa/src/libs/AwaLib'
+let g:netrw_dirhist_2='/home/martin/devel/regression/AWA'
+let g:netrw_dirhist_3='/home/martin/devel/cdnawa/external/libjemalloc'
+let g:netrw_dirhist_4='/home/martin/devel/swapex/external/libjemalloc'
+let g:netrw_dirhist_5='/home/martin/devel/swapex/tools'
+let g:netrw_dirhist_6='/home/martin/devel/swapex/src'
+let g:netrw_dirhist_7='/home/martin/devel/swapex/src/apps'
+let g:netrw_dirhist_8='/home/martin/devel/swapex/src/libs/AwaLib'
+let g:netrw_dirhist_9='/home/martin/devel/tmplast/misc'
